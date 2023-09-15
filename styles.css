@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Center items vertically */
+}
+
+body.dark-mode {
+  background-color: #222;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%; /* Adjust the width as needed */
+  padding: 20px;
+  margin-top: 20px; /* Add margin for spacing from the top */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container.dark-mode {
+  background-color: #333;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dark-mode-toggle {
+  cursor: pointer;
+  color: #007bff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.dark-mode-toggle:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px; /* Add margin for spacing from the title */
+}
+
+h1.dark-mode {
+  color: white;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button.dark-mode {
+  background-color: #0056b3;
+}
+
+/* ... (remaining styles) */
